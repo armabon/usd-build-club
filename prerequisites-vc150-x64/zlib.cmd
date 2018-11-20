@@ -7,7 +7,7 @@ mkdir prereq
 cd prereq
 
 if not exist "zlib/CMakeLists.txt" ^
-git clone git://github.com/madler/zlib.git
+git clone https://github.com/madler/zlib.git
 
 cd zlib
 git pull

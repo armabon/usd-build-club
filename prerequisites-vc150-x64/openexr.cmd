@@ -10,7 +10,7 @@ mkdir prereq
 cd prereq
 
 IF NOT EXIST "openexr\README" ^
-git clone git://github.com/openexr/openexr.git
+git clone https://github.com/openexr/openexr.git
 
 cd openexr
 git pull
@@ -26,4 +26,3 @@ cmake -G "Visual Studio 15 2017 Win64"^
 cmake --build . --target install --config Release -- /maxcpucount:8
 
 cd %current%
-
